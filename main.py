@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-#d
+
 app = FastAPI()
 
 items = []
@@ -17,3 +17,6 @@ def create_item(item: str):
 def get_item(item_id: int) -> str:
     item = items[item_id]
     return item
+
+# GH test
+items = []
